@@ -14,3 +14,26 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.translatey-25{
+  transform: translateY(25%);
+}
+
+:root {
+  --primary: lightblue;
+  --accent: #d4dbe0;
+  --social: #6CB4EE;
+  --link: #4f86f7;
+  --navbar-height: 10vh;
+  --footer-height: 10vh;
+  --content-min-height: 80vh;
+  --navbar-links-number: 3
+}
+
+@media all and (max-height: 900px){
+  :root{
+    --navbar-height: 10vh;
+    --footer-height: 10vh;
+    --content-min-height: 80vh;
+  }
+}
