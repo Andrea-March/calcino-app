@@ -27,8 +27,8 @@ export default function LoginPage(){
             <div className='login-form'>
                 <h3 className='login-title'>Welcome Back!</h3>
                 <div className='d-flex flex-column align-center justify-center w-100 h-100'>
-                    <Input type="text" placeholder="" label="username" required={true} onChange={setUser}/>
-                    <Input type="password" placeholder="" label="password" required={true} onChange={setPassword}/>
+                    <Input type="text" label="username" required={true} onChange={setUser}/>
+                    <Input type="password" label="password" required={true} onChange={setPassword}/>
                     <Button text={'Login'} onClick={handleLogin} />
                 </div>
             </div>

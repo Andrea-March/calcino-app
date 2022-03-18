@@ -16,7 +16,7 @@
      top:5px;
      left:0;
      font-size:16px;
-     color:#fff;
+     color:cornflowerblue;
      pointer-events:none;
      transition: all 0.3s ease-in-out;
 }
@@ -27,16 +27,46 @@
      width:100%;
      padding:8px 0 5px 0;
      font-size:16px;
-     color:#fff;
+     color:cornflowerblue;
 }
 .input-container input:focus{
      border:none;
      outline:none;
-     border-bottom:1px solid #e74c3c;
+     border-bottom:1px solid lightblue;
 }
 
 .input-container input:focus ~ label,
 .input-container input:valid ~ label{
      top:-12px;
      font-size:12px;
+}
+
+
+.trascinatore{background-image:url(http://i.imgur.com/lXzJ1eB.png);}
+.fappassare{background-image:url(http://i.imgur.com/SJbRQF7.png);}
+
+.radio-container input:active +.type-card, .cc-selector input:active +.type-card{opacity: .9;}
+.radio-container input:checked +.type-card, .cc-selector input:checked +.type-card{
+     -webkit-filter: none;
+     -moz-filter: none;
+     filter: none;
+}
+.label-card{
+     cursor:pointer;
+     background-size:contain;
+     background-repeat:no-repeat;
+     background-position: 0 20px !important;
+     display:inline-block;
+     width:100px;height:150px;
+     -webkit-transition: all 100ms ease-in;
+     -moz-transition: all 100ms ease-in;
+     transition: all 100ms ease-in;
+     -webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
+     -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
+     filter: brightness(1.8) grayscale(1) opacity(.7);
+}
+.type-card:hover{
+     -webkit-filter: brightness(1.2) grayscale(.5) opacity(.9);
+     -moz-filter: brightness(1.2) grayscale(.5) opacity(.9);
+     filter: brightness(1.2) grayscale(.5) opacity(.9);
 }
