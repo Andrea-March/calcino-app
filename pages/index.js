@@ -1,13 +1,20 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
-import Header from "../components/header/Header";
-import {BrowserRouter, Route, Routes} from "react-router-dom";
-import Footer from "../components/footer/Footer";
+import { useRouter } from 'next/router';
 import HomePage from "../components/home/HomePage";
+import Header from "../components/header/Header";
+import styles from "../styles/Home.module.css";
+import Footer from "../components/footer/Footer";
+import AuthWrapper from "../components/auth-wrapper/authWrapper";
+import Layout from "../components/layout/Layout";
 
 export default function Home() {
+
+
   return (
-      <HomePage />
+      <Layout>
+          <>
+            <AuthWrapper />
+            <HomePage />
+          </>
+      </Layout>
   )
 }
